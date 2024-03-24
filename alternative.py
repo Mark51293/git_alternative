@@ -1,6 +1,6 @@
 sentence = "Hello World"
 
-new_sentence = ""
+modified_sentence = ""
 upper_lower_sentence = ""
 
 """ 
@@ -10,11 +10,11 @@ changing every even character to uppercase and odd to lowercase
 """
 for i in range (len(sentence)):
     if i % 2 == 0:
-        new_sentence += sentence[i].upper()
+        modified_sentence += sentence[i].upper()
     else:
-        new_sentence += sentence[i].lower()
+        modified_sentence += sentence[i].lower()
 
-print(new_sentence)
+print(f"Modified sentence with characters: {modified_sentence}")
 
 # Splits the sentence to be able to access each element separately
 alt_words = sentence.split(" ")
@@ -32,4 +32,4 @@ for i, word in enumerate(alt_words):
 # joins each element together to create 1 string
 alt_words_new = " ".join(alt_words)
 
-print(alt_words_new)
+print(f"Modified sentence with words: {alt_words_new}")
